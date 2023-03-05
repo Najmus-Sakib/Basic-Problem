@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int sum,rem,num,i,count=0,n;
+	scanf("%d",&n);
+	for(i=1; count<=n; i++)
+	{
+		sum=0;
+		num=i;
+		while(num>0)
+		{
+			rem = num%10;
+			sum=(sum*10)+rem;
+			num=num/10;
+		}
+		if(sum == i)
+		{
+			count++;
+		}
+		if(count==n)
+		{
+			printf("%d th palindrome Number is: %d",count,i);
+			break;
+		}
+	
+		
+	}
+	
+	return 0;
+}
