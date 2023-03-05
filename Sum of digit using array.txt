@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("How many number you want to sum: ");
+	scanf("%d",&n);
+	printf("Enter Yours Number: ");
+	int a[n],sum,rem,num,i;
+	for(i=0; i<n; i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	
+	for(i=0; i<n; i++)
+	{
+		sum=0; 
+		num=a[i];
+		while(num>0)
+		{
+			rem=num%10;
+			sum=sum + rem;
+			num=num/10;
+				
+		}
+		printf("Sum of digit: %d\n",sum);
+	}
+	
+	
+	return 0;
+}
